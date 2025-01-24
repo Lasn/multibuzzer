@@ -202,20 +202,22 @@ export default function Lobby({ setAuth }) {
   const touts = (
     <div className="touts">
       <div>
-        <h4>Simple multiplayer buzzer system</h4>
-        <p>Host a room and invite up to 200 people to join</p>
+        <img
+          src="/welcome.png"
+          alt="Nytårs Taffel 2025"
+          style={{
+            minWidth: '200px',
+            minHeight: '200px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
       </div>
       <div>
-        <h4>Join on any device</h4>
-        <p>
-          Use your computer, smartphone, or tablet to join and start buzzing
-        </p>
-      </div>
-      <div>
-        <h4>Free to use</h4>
-        <p>
-          Perfect for online quiz bowl, trivia night, or a classroom activity
-        </p>
+        <h4>Nytårs Taffel 2025!</h4>
+        <p>Velkommen til årets nytårs taffel</p>
+        <p>Hvert hold skal have 1 bruger</p>
       </div>
     </div>
   );
@@ -238,9 +240,9 @@ export default function Lobby({ setAuth }) {
       </section>
       <section className="primary d-block d-md-none">
         <Header />
-        <Container className="container-mobile">{form}</Container>
-        <div className="divider" />
         <Container className="container-mobile">{touts}</Container>
+        <div className="divider" />
+        <Container className="container-mobile">{form}</Container>
       </section>
       <Footer mobileOnly />
     </main>
