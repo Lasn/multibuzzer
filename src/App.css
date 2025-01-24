@@ -384,3 +384,39 @@ body {
 .App .dim {
   opacity: 0.5;
 }
+
+
+ /* id event-title */
+#event-title {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 2rem; 
+  background: linear-gradient(90deg, #ff5733, #ffc107, #33ff77);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glow 1.5s infinite alternate, slide-in 1s ease-out;
+  margin: 20px 0;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

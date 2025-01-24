@@ -215,7 +215,7 @@ export default function Lobby({ setAuth }) {
         />
       </div>
       <div>
-        <h4>Nytårs Taffel 2025!</h4>
+        <h4 id="event-title">Nytårstaffel 2025</h4>
         <p>Velkommen til årets nytårs taffel</p>
         <p>Hvert hold skal have 1 bruger</p>
       </div>

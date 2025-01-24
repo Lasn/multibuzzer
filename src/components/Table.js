@@ -142,6 +142,7 @@ export default function Table(game) {
       />
       <Container>
         <section>
+          <h1 id="event-title">Nytårstaffel 2025</h1>
           <p id="room-title">Room {game.gameID}</p>
           {!game.isConnected ? (
             <p className="warning">Disconnected - attempting to reconnect...</p>
