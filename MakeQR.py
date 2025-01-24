@@ -1,4 +1,7 @@
 import segno
 
-qrcode = segno.make_qr("http://192.168.1.152:4000")
-qrcode.save("QR_address.png", scale=20 )
+text = input()
+# Generate QR code
+qrcode = segno.make_qr(text)
+qrcode.save("QR_address.png", scale=20)
+
